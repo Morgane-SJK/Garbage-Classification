@@ -39,4 +39,10 @@ La stratégie du Transfer Learning a été utilisée afin d’éviter le problè
 - `model_comparison.py` : Afin de comparer les performances des modèles ci-dessus en termes d'accuracy, rappel, précision, score-f1, nombre de paramètres et durée d'entraînement. Les résultats sont présentés dans le fichier `./Results/transfer_learning_compare_models.csv`
 
 
-Par ailleurs, les différents notebooks placés dans le dossier du même nom retracent les différentes étapes du projet de façon chronologique et présentent différentes visualisations : les images après augmentation, les évolutions de l'accuracy et de la loss des modèles entraînés au fil des epochs, ...
+Par ailleurs, les différents notebooks placés dans le dossier du même nom retracent les différentes étapes du projet de façon chronologique.
+
+* `0_data_visualization.ipynb` : visualisation des images du dataset et exploration des différents types de transformations pour l'augmentation de données
+* `1_transfer_learning_VGG16.ipynb` : premiers tests de transfer learning avec le modèle VGG16 (avec ou sans augmentation de données, adaptation du nombre d'epochs)
+* `2_transfer_learning_compare_models.ipynb` : test de 10 modèles pré-entraînés supplémentaires et comparaison 
+* `3_transfer_learning_resnet.ipynb` : focus sur le modèle ResNet50 avec test de 2 modèles dérivés, réglage des hyper-paramètres et finetuning
+: les images après augmentation, les évolutions de l'accuracy et de la loss des modèles entraînés au fil des epochs, ...
